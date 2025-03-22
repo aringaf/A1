@@ -1,0 +1,23 @@
+let a = 10;
+let b = 7;
+let c = 5;
+let d = 2;
+let x = 6;  
+
+if (x > a) {
+    console.log("x > a"); // x > a > b > c > d
+} else {
+    if (x > b) {
+        console.log("a > x > b"); // a > x > b > c > d
+    } else {
+        if (x > c) {
+            console.log("a > b > x > c"); // a > b > x > c > d
+        } else {
+            if (x > d) {
+                console.log("a > b > c > x > d"); // a > b > c > x > d
+            } else {
+                console.log("x < d"); // a > b > c > d > x
+            }
+        }
+    }
+}
